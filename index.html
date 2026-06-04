@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Nandini ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+    <div class="slide active">
+        <h1>Hi Nandini ❤️</h1>
+        <p>Someone has something special to tell you...</p>
+        <button onclick="nextSlide()">Continue ✨</button>
+    </div>
+
+    <div class="slide">
+        <h1>I Have Something Important To Tell You...</h1>
+        <p class="typewriter" data-text="Every conversation with you feels special."></p>
+        <button onclick="nextSlide()">Next ➜</button>
+    </div>
+
+    <div class="slide">
+        <h1>You Make Days Better ☀️</h1>
+        <p class="typewriter" data-text="Your smile, your presence and your energy make a difference."></p>
+        <button onclick="nextSlide()">Next ➜</button>
+    </div>
+
+    <div class="slide">
+        <h1>A Small Confession ❤️</h1>
+        <p class="typewriter" data-text="I've started caring about you more than I expected."></p>
+        <button onclick="nextSlide()">Next ➜</button>
+    </div>
+
+    <div class="slide">
+        <h1>Will You Be My Girlfriend? ❤️</h1>
+
+        <div class="buttons">
+            <button class="yes" onclick="accepted()">YES ❤️</button>
+            <button class="no" onclick="declined()">NO 😅</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+</div>
+
+<div id="hearts"></div>
+
+<script src="script.js"></script>
+
+</body>
+      </html>
