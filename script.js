@@ -41,17 +41,20 @@ function typeWriter(slide){
     },40);
 }
 
-function accepted(){
+function accepted() {
 
-    confetti({
-        particleCount:200,
-        spread:100
-    });
+document.getElementById("result").innerHTML = `
+<h2>🎉 SHE SAID YES ❤️</h2>
 
-    document.getElementById("result").innerHTML =
-    "You just made someone very happy ❤️";
+<p>
+Mission Successful 😎❤️
+<br><br>
+I was nervous, but now I'm smiling like an idiot. 😄
+<br><br>
+Thank you for making this day unforgettable. ✨
+</p>
+`;
 
-    console.log("YES CLICKED");
 }
 
 function declined(){
@@ -79,3 +82,12 @@ setInterval(()=>{
     },6000);
 
 },400);
+function bestFriend() {
+  document.getElementById("result").innerHTML =
+  "😄 Best friends sounds wonderful too!";
+}
+
+function needTime() {
+  document.getElementById("result").innerHTML =
+  "😊 Take all the time you need.";
+        }
