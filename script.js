@@ -80,7 +80,37 @@ setInterval(()=>{
     setTimeout(()=>{
         heart.remove();
     },6000);
+function sendAnswers() {
 
+const q1 = document.getElementById("q1").value;
+const q2 = document.getElementById("q2").value;
+const q3 = document.getElementById("q3").value;
+const q4 = document.getElementById("q4").value;
+
+emailjs.send(
+"service_elk7xgm",
+"template_cpj25po",
+{
+q1: q1,
+q2: q2,
+q3: q3,
+q4: q4,
+choice: "Answers Submitted"
+}
+)
+.then(function() {
+
+alert("❤️ Your answers have been sent!");
+
+})
+.catch(function(error) {
+
+alert("Failed to send answers");
+console.log(error);
+
+});
+
+    }
 },400);
 function bestFriend() {
   document.getElementById("result").innerHTML =
