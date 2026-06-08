@@ -91,11 +91,11 @@ emailjs.send(
 "service_elk7xgm",
 "template_cpj25po",
 {
-q1: q1,
-q2: q2,
-q3: q3,
-q4: q4,
-choice: "Answers Submitted"
+ q1: q1,
+ q2: q2,
+ q3: q3,
+ q4: q4,
+ choice: "Answers Submitted"
 }
 )
 .then(function() {
