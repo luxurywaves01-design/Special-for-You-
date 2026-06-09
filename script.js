@@ -80,6 +80,7 @@ setInterval(()=>{
     setTimeout(()=>{
         heart.remove();
     },6000);
+},400);
 function sendAnswers() {
 
 const q1 = document.getElementById("q1").value;
