@@ -110,8 +110,6 @@ console.log(error);
 
 });
 
-    }
-},400);
 function bestFriend() {
   document.getElementById("result").innerHTML =
   "😄 Best friends sounds wonderful too!";
