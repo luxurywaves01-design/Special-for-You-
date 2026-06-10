@@ -1,3 +1,5 @@
+alert("script loaded");
+
 let current = 0;
 const slides = document.querySelectorAll(".slide");
 
