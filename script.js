@@ -81,10 +81,13 @@ function sendAnswers() {
         alert("❤️ Your answers have been sent!");
 
     })
-    .catch(function (error) {
+    .catch(function(error) {
 
-        alert("Failed to send answers");
-        console.log(error);
+alert(JSON.stringify(error));
+
+console.log(error);
+
+});
 
     });
 }
